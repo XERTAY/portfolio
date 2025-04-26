@@ -1,0 +1,39 @@
+/* src/styles/NeonTitle.module.css */
+.wrapper {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* police responsive : 
+     - min 3rem, idéal 10vw, max 6rem */
+  .line {
+    display: block;
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: bold;
+    color: transparent;
+    line-height: 1;
+  }
+  
+  /* glow plus subtil */
+  .cyan {
+    text-shadow:
+      0 0 2px var(--color-neon-cyan),
+      0 0 4px var(--color-neon-cyan);
+  }
+  .pink {
+    margin-top: -1.2rem;
+    text-shadow:
+      0 0 2px var(--color-neon-pink),
+      0 0 4px var(--color-neon-pink);
+  }
+  
+  /* petit ajustement mobile */
+  @media (max-width: 480px) {
+    .line {
+      font-size: clamp(2rem, 12vw, 4rem);
+    }
+    .pink {
+      margin-top: -1rem;
+    }
+  }
+  

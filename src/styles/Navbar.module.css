@@ -1,0 +1,24 @@
+/* src/styles/Navbar.module.css */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    /* padding plus raisonnable */
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    background: transparent;
+  }
+  .link {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;  /* un peu plus petit */
+    transition: color 0.2s;
+  }
+  .link:hover {
+    color: var(--color-neon-cyan);
+  }
+  
