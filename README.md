@@ -1,13 +1,44 @@
-# React + Vite
+# 🌐 Portfolio — Vincent TEISSIER
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur le dépôt de mon **portfolio personnel**, une vitrine interactive et immersive de mes projets, compétences et expériences dans le domaine du développement logiciel.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Aperçu
 
-## Expanding the ESLint configuration
+Ce site présente :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# portfolio
+- Une **interface animée** et réactive, avec un thème **cyberpunk/néon**.
+- Des **effets visuels personnalisés** : glitch, halos lumineux, curseur animé.
+- Un **système de scroll snap intelligent**, pour une navigation fluide par section.
+- Des **sections claires** : introduction, parcours (à propos), projets, contact.
+
+---
+
+## 🔧 Technologies utilisées
+
+- **React.js** + **Vite** pour la rapidité et la modularité
+- **Framer Motion** pour les animations fluides
+- **CSS personnalisé** pour un rendu visuel unique
+- **JavaScript** pour les interactions avancées (scroll, animation F11)
+- **Responsive Design** (mobile/tablette/desktop)
+
+
+---
+
+## 🖼️ Aperçu visuel
+
+![Screenshot Portfolio](./public/preview.png)
+
+---
+
+## 🧪 Lancer en local
+
+```bash
+# Installer les dépendances
+npm install
+
+# Démarrer le serveur local
+npm run dev
+
+
