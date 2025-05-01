@@ -1,9 +1,0 @@
-/* src/styles/Layout.module.css */
-.layout {
-    min-height: 100vh;
-    padding-top: 1rem;           /* laisse la place à la navbar sticky */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  

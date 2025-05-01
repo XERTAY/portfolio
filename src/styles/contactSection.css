@@ -1,0 +1,122 @@
+.contact-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background: #050505;
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .contact-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .section-title {
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #ff40ff;
+    text-shadow: 0 0 8px #ff40ff;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-description {
+    text-align: center;
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-inline: auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Formulaire */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    background: #111;
+    border: 2px solid #333;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 10px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #ff40ff;
+    box-shadow: 0 0 10px #ff40ff;
+  }
+  
+  .contact-form button {
+    padding: 1rem;
+    background: #ff40ff;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+  }
+  
+  .contact-form button:hover {
+    box-shadow: 0 0 10px #ff40ff, 0 0 20px #ff40ff;
+  }
+  
+  /* Halo flous arrière-plan */
+  .contact-glow-1,
+  .contact-glow-2,
+  .contact-glow-3 {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .contact-glow-1 {
+    top: 20%;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    background: #ff40ff;
+  }
+  
+  .contact-glow-2 {
+    bottom: 10%;
+    right: 15%;
+    width: 250px;
+    height: 250px;
+    background: #9f00ff;
+  }
+  
+  .contact-glow-3 {
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background: #ff40ff;
+    transform: translate(-50%, -50%);
+  }
+  

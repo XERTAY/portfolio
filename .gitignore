@@ -1,0 +1,59 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# dotenv environment files (if not public)
+.env
+.env.*.local
+.env.local
+
+# OS-generated files
+*.swp
+*.bak
+
+# Parcel cache
+.cache/
+
+# eslint / stylelint cache
+.eslintcache
+.stylelintcache
+
+# Testing
+coverage/
+jest-test-results.json
+
+# Optional lockfiles (keep only the one you're using)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# TypeScript
+*.tsbuildinfo
+
+# React Native
+.expo/
+
+# Storybook
+.out/
+storybook-static/

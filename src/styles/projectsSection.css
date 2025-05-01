@@ -1,0 +1,163 @@
+.projects-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background: #050505;
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .projects-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* évite de prendre tout le header */
+    position: relative;
+    z-index: 2;
+    gap: 5rem;
+  }
+  
+  
+  .project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  
+  .project-item {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 2rem; /* augmente ici */
+    padding: 0.6rem 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  
+  .project-item.active {
+    color: #00ffff;
+    text-shadow: 0 0 6px #00ffff, 0 0 12px #00ffff;
+    transform: translateX(10px);
+  }
+  
+  .project-index {
+    margin-right: 1rem;
+    font-weight: 300;
+    color: #888;
+  }
+  
+  .project-stack {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #888;
+    margin-top: 0.2rem;
+  }
+  
+  .project-preview {
+    width: 50%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 12px;
+    filter: contrast(1.2);
+    position: relative;
+    animation: glitchEffect 2.2s infinite steps(1, end);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  }  
+  
+  /* Glitch effect on image */
+  .preview-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  /* Image visible */
+  .preview-image {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 12px;
+    filter: contrast(1.2);
+    position: relative;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+    transition: transform 0.2s ease-out; /* ajout pour le suivi vertical fluide */
+    will-change: transform;
+  }
+  
+  
+  /* Bande glitch dynamique */
+  .project-preview.active .preview-image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    opacity: 0.7;
+    filter: sepia(80%) saturate(1.4);
+    background-image: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    animation: glitchBand 1.5s infinite linear;
+  }
+  
+  /* Halos flous inspirés d’IntroSection */
+.projects-glow-1,
+.projects-glow-2,
+.projects-glow-3 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.projects-glow-1 {
+  top: 15%;
+  left: 10%;
+  width: 300px;
+  height: 300px;
+  background: #00ffff;
+}
+
+.projects-glow-2 {
+  bottom: 15%;
+  right: 15%;
+  width: 100px;
+  height: 100px;
+  background: #ff40ff;
+}
+
+.projects-glow-3 {
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: #9f00ff;
+  transform: translate(-50%, -50%);
+}
