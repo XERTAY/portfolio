@@ -57,6 +57,15 @@ const IntroSection = () => {
       <div className="intro-glow-extra" />
       <div className="intro-glow-extra" />
       <div className="intro-glow-extra" />
+      
+      {/* Image de profil */}
+      <div className="profile-image-container">
+        <img src="/IMG_5118-12.jpg" alt="Vincent Teissier" className="profile-image" onError={(e) => {
+          console.log('Image non trouvée, vérifiez le chemin');
+          e.target.style.display = 'none';
+        }} />
+        <div className="profile-image-overlay" />
+      </div>
 
       <p className="intro-subtitle">Hi, I am</p>
       <h1 className="glitch-text glitch-pop" data-text={firstName}>
@@ -71,21 +80,11 @@ const IntroSection = () => {
       </p>
 
       <div className="intro-socials delayed-fade">
-        <a href="https://github.com" className="social-btn github" />
-        <a href="https://linkedin.com" className="social-btn linkedin" />
-        <a href="mailto:your@email.com" className="social-btn mail" />
+        <a href="https://github.com/XERTAY" className="social-btn github" />
+        <a href="https://www.linkedin.com/in/vincentteissier/" className="social-btn linkedin" />
+        <a href="https://play.google.com/apps/test/com.xertay.room/3" className="social-btn playstore" />
       </div>
 
-      <div className="intro-nav-buttons delayed-fade">
-        <div className="nav-btn-wrapper">
-          <span className="nav-arrow">←</span>
-          <a href="#projects" className="nav-btn">Projects</a>
-        </div>
-        <div className="nav-btn-wrapper">
-          <a href="#contact" className="nav-btn">Contact</a>
-          <span className="nav-arrow">→</span>
-        </div>
-      </div>
 
       <div className="section-transition-glow" />
     </section>

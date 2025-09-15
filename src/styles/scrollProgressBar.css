@@ -12,5 +12,5 @@
   width: 100%;
   background: linear-gradient(to bottom, #00ffff, #ff40ff);
   border-radius: 2px;
-  transition: height 0.1s ease-out;
+  transition: height 0.05s ease-out;
 }

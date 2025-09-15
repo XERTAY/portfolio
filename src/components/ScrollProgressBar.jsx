@@ -3,7 +3,7 @@ import "../styles/scrollProgressBar.css";
 import { useScrollContainer } from "../context/ScrollContext";
 
 const ScrollProgressBar = () => {
-  const scrollRef = useScrollContainer();
+  const { scrollRef } = useScrollContainer();
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {

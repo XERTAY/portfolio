@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useScrollContainer } from "../context/ScrollContext";
 
 const SmoothSnapScrollWrapper = ({ children }) => {
-  const containerRef = useScrollContainer();
+  const { scrollRef: containerRef, updateActiveSection } = useScrollContainer();
   const isSnapping = useRef(false);
   const lastScrollY = useRef(0);
 
@@ -36,15 +36,25 @@ const SmoothSnapScrollWrapper = ({ children }) => {
       const offsetFromCurrent = scrollY - current.offsetTop;
       const threshold = viewportHeight / 4;
 
+      let targetSection = current;
+
       if (direction === "down" && offsetFromCurrent > threshold && next) {
         isSnapping.current = true;
+        targetSection = next;
         next.scrollIntoView({ behavior: "smooth" });
       } else if (direction === "up" && offsetFromCurrent < -threshold && prev) {
         isSnapping.current = true;
+        targetSection = prev;
         prev.scrollIntoView({ behavior: "smooth" });
       } else {
         isSnapping.current = true;
+        targetSection = current;
         current.scrollIntoView({ behavior: "smooth" });
+      }
+
+      // Envoyer le message à la navbar avec la section active
+      if (targetSection && targetSection.id) {
+        updateActiveSection(targetSection.id);
       }
 
       setTimeout(() => {

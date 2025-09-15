@@ -19,6 +19,12 @@ const ContactSection = () => {
         <textarea placeholder="Votre message" rows="5" required></textarea>
         <button type="submit">Envoyer</button>
       </form>
+
+      <div className="contact-socials">
+        <a href="https://github.com/XERTAY" className="social-btn github" />
+        <a href="https://www.linkedin.com/in/vincentteissier/" className="social-btn linkedin" />
+        <a href="https://play.google.com/apps/test/com.xertay.room/3" className="social-btn playstore" />
+      </div>
     </section>
   );
 };
