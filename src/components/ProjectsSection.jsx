@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: "Room",
     stack: "React Native • Expo • SocketIO.js • Android • Apple",
-    image: "/FlowFree.png",
+    image: "/portfolio/FlowFree.png",
     description: "Application mobile de gestion de chambres avec communication temps réel",
     details: "Room est une application mobile révolutionnaire développée avec React Native et Expo qui transforme la gestion hôtelière. L'application utilise SocketIO.js pour une communication instantanée entre le personnel, permettant une synchronisation en temps réel des données de toutes les chambres. Disponible sur Android et iOS, elle offre une interface intuitive et moderne pour la gestion des réservations, l'état des chambres, et la coordination du personnel de ménage. L'application inclut des fonctionnalités avancées comme la géolocalisation, les notifications push, et un système de reporting en temps réel.",
     features: [
@@ -23,16 +23,16 @@ const projects = [
     ],
     technologies: ["React Native", "Expo", "SocketIO.js", "JavaScript", "Android", "iOS", "Firebase", "Maps API"],
     detailImages: [
-      "/FlowFree.png",
-      "/pipes1.png", 
-      "/pipes2.png"
+      "/portfolio/FlowFree.png",
+      "/portfolio/pipes1.png", 
+      "/portfolio/pipes2.png"
     ]
   },
   {
     id: 2,
     title: "Delice",
     stack: "React Native • Expo • Express.js • Node.js • MongoDB",
-    image: "/FlowFree.png",
+    image: "/portfolio/FlowFree.png",
     description: "Application de livraison de repas avec backend Express.js",
     details: "Delice est une plateforme complète de livraison de repas qui connecte les clients, restaurants et livreurs. Développée avec React Native et Expo pour le frontend mobile, et Express.js pour le backend robuste, l'application offre une expérience utilisateur fluide et moderne. Les clients peuvent parcourir les menus, passer des commandes, suivre leurs livraisons en temps réel, et évaluer leurs expériences. Les restaurateurs bénéficient d'un dashboard complet pour gérer leurs commandes, menus, et statistiques. L'application inclut un système de paiement sécurisé, une géolocalisation précise, et des algorithmes d'optimisation des trajets.",
     features: [
@@ -47,16 +47,16 @@ const projects = [
     ],
     technologies: ["React Native", "Expo", "Express.js", "Node.js", "MongoDB", "Stripe API", "Maps API", "SocketIO.js"],
     detailImages: [
-      "/FlowFree.png",
-      "/background.png",
-      "/background2.png"
+        "/portfolio/FlowFree.png",
+      "/portfolio/background.png",
+      "/portfolio/background2.png"
     ]
   },
   {
     id: 3,
     title: "Site Kinésithérapeute",
     stack: "React.js • Tailwind CSS • Node.js • MongoDB",
-    image: "/IMG_5118-12.jpg",
+    image: "/portfolio/IMG_5118-12.jpg",
     description: "Site web professionnel pour cabinet de kinésithérapie",
     details: "Site web professionnel et moderne développé avec React.js pour un cabinet de kinésithérapie renommé. Le site présente de manière élégante les services offerts, permet la prise de rendez-vous en ligne avec un système de calendrier intelligent, et offre une interface responsive et accessible pour tous les patients. Le site inclut un système de gestion des horaires, des informations détaillées sur les traitements, un blog informatif, et une section témoignages. L'interface est optimisée pour la conversion avec des formulaires intuitifs et un design qui inspire confiance et professionnalisme.",
     features: [
@@ -71,9 +71,9 @@ const projects = [
     ],
     technologies: ["React.js", "Tailwind CSS", "Node.js", "MongoDB", "Express.js", "EmailJS", "Calendar API", "Responsive Design"],
     detailImages: [
-      "/IMG_5118-12.jpg",
-      "/preview.png",
-      "/F11_logo.png"
+      "/portfolio/IMG_5118-12.jpg",
+      "/portfolio/preview.png",
+      "/portfolio/F11_logo.png"
     ]
   },
 ];
@@ -232,7 +232,7 @@ const ProjectsSection = () => {
                 <div className="project-details-section">
                   <h4>Images du projet</h4>
                   <div className="project-images-grid">
-                    {(selectedProject?.detailImages || ["/FlowFree.png", "/pipes1.png", "/pipes2.png"]).map((image, index) => (
+                    {(selectedProject?.detailImages || ["/portfolio/FlowFree.png", "/portfolio/pipes1.png", "/portfolio/pipes2.png"]).map((image, index) => (
                       <div key={index} className="project-detail-image">
                         <img src={image} alt={`${selectedProject?.title || "Projet"} - Image ${index + 1}`} />
                       </div>

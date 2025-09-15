@@ -48,7 +48,7 @@ const IntroSection = () => {
             finalFadeOut ? "fade-out" : ""
           }`}
         >
-          <img src="/F11_logo.png" alt="F11 Logo" className="hint-icon" />
+          <img src="/portfolio/F11_logo.png" alt="F11 Logo" className="hint-icon" />
           <p className="hint-text">Pour une meilleure expérience</p>
         </div>
       )}
@@ -60,7 +60,7 @@ const IntroSection = () => {
       
       {/* Image de profil */}
       <div className="profile-image-container">
-        <img src="/IMG_5118-12.jpg" alt="Vincent Teissier" className="profile-image" onError={(e) => {
+        <img src="/portfolio/IMG_5118-12.jpg" alt="Vincent Teissier" className="profile-image" onError={(e) => {
           console.log('Image non trouvée, vérifiez le chemin');
           e.target.style.display = 'none';
         }} />
