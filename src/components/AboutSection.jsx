@@ -4,16 +4,16 @@ import "../styles/aboutSection.css";
 
 const timeline = [
 {
-    date: "Aujourd'hui- ???",
+    date: "Aujourd'hui - 2026?",
     title: "Admis en Licence Miage",
     subtitle: "Evry Paris Saclay, Evry",
     details: "Spécialisation en développement web et mobile, projets en équipe, gestion de projet agile.",
     },
   {
-    date: "2023 - Aujourd'hui",
+    date: "2023 - 2025",
     title: "BUT Informatique",
     subtitle: "Université Paris Est Créteil, Fontainebleau",
-    details: "Spécialisation en développement web et mobile, projets en équipe, gestion de projet agile.",
+    details: "Spécialisation en développement web et mobile, projets en équipe, gestion de projet agile. Et obtention du diplôme de DUT en Informatique.",
   },
   {
     date: "2020 - 2023",

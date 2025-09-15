@@ -151,6 +151,7 @@ const ProjectsSection = () => {
         <div className="projects-glow-3" />
 
       <h2 className="section-title">Projets</h2>
+      <p className="section-subtitle">Cliquer sur l'image ou la section de projet pour en savoir plus</p>
       
       <div className={`projects-slider ${showDetails ? "slide-left" : ""} ${isClosing ? "slide-right" : ""} ${isScrollClosing ? "slide-right-fast" : ""}`}>
         {/* Vue principale des projets */}
@@ -175,21 +176,16 @@ const ProjectsSection = () => {
             <div className={`project-preview ${active !== null ? "active" : ""}`}>
               <div className="preview-content">
                 {active !== null && (
-                  <>
-                    <p className="click-hint">
-                      Cliquer sur l'image ou la section de projet pour en savoir plus
-                    </p>
-                    <div 
-                      className="preview-image-wrapper"
-                      onClick={() => handleProjectClick(active)}
-                    >
-                      <GlitchImage
-                        src={projects[active].image}
-                        alt={projects[active].title}
-                        className="hologram-image"
-                      />
-                    </div>
-                  </>
+                  <div 
+                    className="preview-image-wrapper"
+                    onClick={() => handleProjectClick(active)}
+                  >
+                    <GlitchImage
+                      src={projects[active].image}
+                      alt={projects[active].title}
+                      className="hologram-image"
+                    />
+                  </div>
                 )}
               </div>
             </div>
